@@ -5,8 +5,6 @@ import 'package:midterm/data/models/cars_model.dart';
 class editCar extends StatefulWidget {
   static const routeName = "/edit-car";
 
-  // final Map parsedData;
-
   const editCar({Key? key}) : super(key: key);
 
   @override

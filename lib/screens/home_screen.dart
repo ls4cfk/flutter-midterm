@@ -20,7 +20,15 @@ class _homeScreenState extends State<homeScreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Cars")),
+      appBar: AppBar(title: const Text("Cars"), actions: <Widget>[
+        IconButton(
+          icon: const Icon(Icons.add),
+          onPressed: () {
+            Navigator.pushNamed(context, addCar.routeName);
+          },
+        ),
+        Text(" ")
+      ]),
       drawer: Drawer(),
       body: ListView.builder(
           itemBuilder: (ctx, index) {
@@ -69,11 +77,6 @@ class _homeScreenState extends State<homeScreen> {
             );
           },
           itemCount: carList.length),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pushNamed(context, addCar.routeName);
-        },
-      ),
     );
   }
 }

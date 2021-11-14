@@ -135,7 +135,7 @@ class _addCarState extends State<addCar> {
                               Navigator.pushNamed(
                                   context,
                                   homeScreen
-                                      .routeName); // ეს არ უნდა იყოს მთლად სწორი გადაწყვეტილება მარა მარტივი გამოსავალია ;დ როგორ უნდა გამეკეთებ
+                                      .routeName); // ეს არ უნდა იყოს მთლად სწორი გადაწყვეტილება მარა მარტივი გამოსავალია ;დ როგორ უნდა გამეკეთებინა მოვისმენ სიამოვნებით.
                             }
                           },
                           child: const Text("Add"))
