@@ -138,23 +138,3 @@ class CarDetails extends StatelessWidget {
         ));
   }
 }
-
-// body: SingleChildScrollView(
-//   child: Center(
-//     child: Column(
-//       mainAxisSize: MainAxisSize.min,
-//       children: [
-//         FadeInImage(
-//           width: double.infinity,
-//           fit: BoxFit.fill,
-//           height: 150,
-//           image: NetworkImage(car.imageUrl),
-//           placeholder: const AssetImage("images/car_placeholder.png"),
-//         ),
-//         Text(car.brand),
-//         Text(car.year.toString()),
-//         Text(car.description)
-//       ],
-//     ),
-//   ),
-// ));
