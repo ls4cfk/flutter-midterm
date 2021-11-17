@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:midterm/data/models/cars_model.dart';
 import 'package:midterm/data/repository/car_helper.dart';
+import 'screens.dart';
 
 class CarDetails extends StatelessWidget {
   const CarDetails({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class CarDetails extends StatelessWidget {
             icon: const Icon(Icons.delete),
             onPressed: () {
               CarRepository().deleteCar(car.id);
-              Navigator.pop(context);
+              Navigator.pushNamed(context, homeScreen.routeName);
             },
           ),
           Text(" ")
